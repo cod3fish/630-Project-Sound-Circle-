@@ -83,6 +83,8 @@ let planets = [];
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0);
+  fill(23, 200, 90);
+  ellipse(800,1200);
 
   for (let i = 0; i < 100; i++) {
     stars.push(new Star());
@@ -91,11 +93,11 @@ function setup() {
   for (let i = 0; i < 5; i++) {
     planets.push(new Planet());
   }
-  console.log("jsahdbashjkb", stars, planets);
+  
 }
 
 function draw() {
-  background(0);
+//   background(0);
 
   for (let star of stars) {
     star.show();
@@ -111,12 +113,11 @@ class Star {
     this.x = random(width);
     this.y = random(height);
     this.size = random(1, 3);
-    this.color = color(random(colors));
+    this.color = color(random(1,255));
     // this.color = 255;
   }
 
   show() {
-    console.log("blablaaa");
     fill(this.color);
     noStroke();
     ellipse(this.x, this.y, this.size);
@@ -127,8 +128,8 @@ class Planet {
   constructor() {
     this.x = random(width);
     this.y = random(height);
-    this.size = random(10, 30);
-    this.color = color(random(colors));
+    this.size = random(50, 200);
+    this.color = color(random(1,255));
   }
 
   show() {

@@ -105,3 +105,5 @@ class Particle {   // creating particles around the circular equalizer
     }
 
 }
+
+
