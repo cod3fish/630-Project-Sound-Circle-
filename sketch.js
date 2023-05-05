@@ -38,6 +38,7 @@ function setup() {
   background(0);
   fill(23, 200, 90);
   ellipse(800,1200);
+  console.log("canvas created");
 
   for (let i = 0; i < 100; i++) {
     stars.push(new Star());
@@ -59,6 +60,7 @@ function draw() {
   for (let planet of planets) {
     planet.show();
   }
+  
 
   beginShape();
   let waveLength = 100;
