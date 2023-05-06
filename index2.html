@@ -4,28 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <!-- <script src= "sketch.js"></script> -->
+  <script src= "sketch.js"></script>
+  <!-- <script src= "sketch2.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.js"></script>
-  <title>Equalizer - Page 2</title>
+  <title>Soundscape - Page 2</title>
 </head>
-<body>
+<body class="page2">
   <nav>
     <div class="navbar">
-      <h1 class="title">Equalizer</h1>
+      <h1 class="title">Soundscape</h1>
       <div class="nav-links">
-        <a href="index.html" class="nav-button">Page 1</a>
-        <a href="index2.html" class="nav-button">Page 2</a> 
+        <a href="index.html" class="nav-button">Song</a>
+        <a href="index2.html" class="nav-button">Planets</a> 
       </div>
     </div>
   </nav>
   <main>
-    <h2>Welcome to Page 2</h2>
-    <!-- Adding a search bar to the web page -->
-    <div class="search-container">
-        <input type="text" class="search-input" placeholder="Search...">
-        <button class="search-button">Search</button>
-      </div>
-  </main>
+    <!-- <div class="song-viz">
+        <script src ="app.js"></script>
+    </div> -->
+
+    <div class="color-cont">
+    <h1>Select a color</h1>
+    <input type="color" id="color-input">
+    <button class="generate-button" onclick="generateColorScheme()">Apply colors</button>
+    <div id="color-container" style="display: flex;"></div>
+    </div>
+    
+    </main>
 </body>
 </html>

@@ -3,7 +3,7 @@ let fft;
 let particles = [];
 
 function preload() {
-    song = loadSound('Wetwork.mp3'); 
+    song = loadSound('song1.mp3'); 
 }
 
 function setup() {
@@ -105,3 +105,5 @@ class Particle {   // creating particles around the circular equalizer
     }
 
 }
+
+

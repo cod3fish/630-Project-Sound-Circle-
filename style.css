@@ -8,10 +8,16 @@
     background-color: black;
     font-family: Arial, sans-serif;
     color: white;
-    background-image: url("Background.png"); /* Replace with the name of your image file */
+    background-image: url("Background.png"); /* Background Image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .page2 {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
   }
   
   .navbar {
@@ -88,3 +94,30 @@
     background-color: darkred;
   }
   
+  .generate-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .generate-button:hover {
+    background-color: darkred;
+  }
+
+  .color-cont {
+    position: absolute;
+    bottom: -100px;
+  }
+
+  .song-viz {
+    position: absolute;
+    top: 20px;
+  }
+
+  .center-text {
+    position: absolute;
+    position: center;
+  }
