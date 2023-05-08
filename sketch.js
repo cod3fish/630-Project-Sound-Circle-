@@ -35,7 +35,7 @@ let planets = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(0);
+  clear(0);
   fill(23, 200, 90);
   ellipse(800,1200);
   console.log("canvas created");
@@ -51,7 +51,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  clear(0);
 
   for (let star of stars) {
     star.show();
